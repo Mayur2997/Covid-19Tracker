@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		995E68A22448118D00D41098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995E68A02448118D00D41098 /* Main.storyboard */; };
 		995E68A42448119100D41098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 995E68A32448119100D41098 /* Assets.xcassets */; };
 		995E68A72448119100D41098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995E68A52448119100D41098 /* LaunchScreen.storyboard */; };
+		995E68B3244853D300D41098 /* AvoidInfactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E68B2244853D300D41098 /* AvoidInfactionVC.swift */; };
+		F9D3855A47A7C1B978DCBC9B /* Pods_Covid_19Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8137F7DE9618F6448279D01E /* Pods_Covid_19Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8137F7DE9618F6448279D01E /* Pods_Covid_19Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid_19Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F7C8ABF265CC13343DDAC5 /* Pods-Covid-19Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid-19Tracker.release.xcconfig"; path = "Target Support Files/Pods-Covid-19Tracker/Pods-Covid-19Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		995E68972448118D00D41098 /* Covid-19Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		995E689A2448118D00D41098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995E689C2448118D00D41098 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		995E68A32448119100D41098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		995E68A62448119100D41098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		995E68A82448119100D41098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		995E68B2244853D300D41098 /* AvoidInfactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidInfactionVC.swift; sourceTree = "<group>"; };
+		D0E299B8ED9F17BADAC2C4C6 /* Pods-Covid-19Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid-19Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Covid-19Tracker/Pods-Covid-19Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D3855A47A7C1B978DCBC9B /* Pods_Covid_19Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0092229C45D29C72BA9F2640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8137F7DE9618F6448279D01E /* Pods_Covid_19Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		995E688E2448118D00D41098 = {
 			isa = PBXGroup;
 			children = (
 				995E68992448118D00D41098 /* Covid-19Tracker */,
 				995E68982448118D00D41098 /* Products */,
+				AB8AB6B4CCB0BA6A92222958 /* Pods */,
+				0092229C45D29C72BA9F2640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +76,22 @@
 				995E689A2448118D00D41098 /* AppDelegate.swift */,
 				995E689C2448118D00D41098 /* SceneDelegate.swift */,
 				995E689E2448118D00D41098 /* ViewController.swift */,
+				995E68B2244853D300D41098 /* AvoidInfactionVC.swift */,
 				995E68A02448118D00D41098 /* Main.storyboard */,
 				995E68A32448119100D41098 /* Assets.xcassets */,
 				995E68A52448119100D41098 /* LaunchScreen.storyboard */,
 				995E68A82448119100D41098 /* Info.plist */,
 			);
 			path = "Covid-19Tracker";
+			sourceTree = "<group>";
+		};
+		AB8AB6B4CCB0BA6A92222958 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0E299B8ED9F17BADAC2C4C6 /* Pods-Covid-19Tracker.debug.xcconfig */,
+				85F7C8ABF265CC13343DDAC5 /* Pods-Covid-19Tracker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 995E68AB2448119100D41098 /* Build configuration list for PBXNativeTarget "Covid-19Tracker" */;
 			buildPhases = (
+				31415EEF1F58DDAB2D86DB40 /* [CP] Check Pods Manifest.lock */,
 				995E68932448118D00D41098 /* Sources */,
 				995E68942448118D00D41098 /* Frameworks */,
 				995E68952448118D00D41098 /* Resources */,
+				6FB9DF394C28F398750DBED1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31415EEF1F58DDAB2D86DB40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Covid-19Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB9DF394C28F398750DBED1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Covid-19Tracker/Pods-Covid-19Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Covid-19Tracker/Pods-Covid-19Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Covid-19Tracker/Pods-Covid-19Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		995E68932448118D00D41098 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995E68B3244853D300D41098 /* AvoidInfactionVC.swift in Sources */,
 				995E689F2448118D00D41098 /* ViewController.swift in Sources */,
 				995E689B2448118D00D41098 /* AppDelegate.swift in Sources */,
 				995E689D2448118D00D41098 /* SceneDelegate.swift in Sources */,
@@ -282,6 +354,7 @@
 		};
 		995E68AC2448119100D41098 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E299B8ED9F17BADAC2C4C6 /* Pods-Covid-19Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		995E68AD2448119100D41098 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F7C8ABF265CC13343DDAC5 /* Pods-Covid-19Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
