@@ -830,6 +830,7 @@ Why? National and local authorities will have the most up to date information on
                         <outlet property="question4Yes" destination="6oR-uO-3fi" id="mdL-Lq-HKf"/>
                         <outlet property="question5View" destination="GVr-OT-88P" id="cPr-GO-wak"/>
                         <outlet property="question5Yes" destination="VQu-KV-f2j" id="V9l-2G-Ib9"/>
+                        <outlet property="scrollQuestion" destination="eCX-R1-twG" id="7sA-Yy-iEc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tg8-Py-AhP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

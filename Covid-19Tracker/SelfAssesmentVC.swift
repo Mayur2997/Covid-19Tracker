@@ -31,6 +31,9 @@ class SelfAssesmentVC: UIViewController {
     @IBOutlet var questiob5No: UIButton!
     @IBOutlet var question5Yes: UIButton!
     
+    @IBOutlet var scrollQuestion: UIScrollView!
+    
+    
     let arrResult = ["Please call 911 or go directly to your nearest emergency department.","Please consult your family doctor. If you are unable to reach your regular health care provider, call Telehealth.","Please stay at home. As a precaution, the Public Health Agency of Canada is asking anyone with symptoms (fever, cough, sneezing, sore throat, or difficulty breathing) to stay home for 14 days.","Please self-isolate for 14 days. You do not need testing for COVID-19.","Please self-isolate for 14 days. You do not need testing for COVID-19."]
     
     
@@ -81,18 +84,26 @@ class SelfAssesmentVC: UIViewController {
             question2View.isHidden = false
             question2No.isHidden = false
             question2Yes.isHidden = false
+            let yVal = question1Yes.frame.origin.y
+            scrollQuestion.setContentOffset(CGPoint(x: 0, y: yVal), animated: true)
         } else if question == 1 {
             question3View.isHidden = false
             question3No.isHidden = false
             question3Yes.isHidden = false
+            let yVal = question2Yes.frame.origin.y
+            scrollQuestion.setContentOffset(CGPoint(x: 0, y: yVal), animated: true)
         } else if question == 2 {
             question4View.isHidden = false
             question4No.isHidden = false
             question4Yes.isHidden = false
+            let yVal = question3Yes.frame.origin.y
+            scrollQuestion.setContentOffset(CGPoint(x: 0, y: yVal), animated: true)
         } else if question == 3 {
             question5View.isHidden = false
             questiob5No.isHidden = false
             question5Yes.isHidden = false
+            let yVal = question4Yes.frame.origin.y
+            scrollQuestion.setContentOffset(CGPoint(x: 0, y: yVal), animated: true)
         } else {
             let selfAssesmentResultVC = self.storyboard!.instantiateViewController(withIdentifier: "SelfAssesmentResultVC") as! SelfAssesmentResultVC
             selfAssesmentResultVC.result = "Since you don’t have any COVID-19 symptoms, you don’t need to be tested for COVID-19.\nPlease self-monitor, wash your hands frequently, and practice physical distancing. If you develop any symptoms (fever, cough, sneezing, sore throat, or difficulty breathing), or become aware of any potential exposures to cases of COVID-19, take this self-assessment again."
