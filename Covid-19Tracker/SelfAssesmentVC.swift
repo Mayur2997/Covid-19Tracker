@@ -46,11 +46,22 @@ class SelfAssesmentVC: UIViewController {
     
     //Setup UI
     func setupUI() {
-        roundedBorder(view: question1View)
-        roundedBorder(view: question2View)
-        roundedBorder(view: question3View)
-        roundedBorder(view: question4View)
-        roundedBorder(view: question5View)
+        roundedBorderView(view: question1View)
+        roundedBorderView(view: question2View)
+        roundedBorderView(view: question3View)
+        roundedBorderView(view: question4View)
+        roundedBorderView(view: question5View)
+        
+        roundedBorderBtn(btn: question1No)
+        roundedBorderBtn(btn: question1Yes)
+        roundedBorderBtn(btn: question2No)
+        roundedBorderBtn(btn: question2Yes)
+        roundedBorderBtn(btn: question3No)
+        roundedBorderBtn(btn: question3Yes)
+        roundedBorderBtn(btn: question4No)
+        roundedBorderBtn(btn: question4Yes)
+        roundedBorderBtn(btn: questiob5No)
+        roundedBorderBtn(btn: question5Yes)
         
     }
     
@@ -73,9 +84,16 @@ class SelfAssesmentVC: UIViewController {
         question5Yes.isHidden = hide
     }
     
-    func roundedBorder(view: UIView){
+    //Rounded border to view
+    func roundedBorderView(view: UIView){
         view.layer.cornerRadius = 10
         view.clipsToBounds = true
+    }
+    
+    //Rounded border to button
+    func roundedBorderBtn(btn: UIButton){
+        btn.layer.cornerRadius = 10
+        btn.clipsToBounds = true
     }
     
     // handel no button click
