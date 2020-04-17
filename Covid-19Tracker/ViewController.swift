@@ -102,16 +102,20 @@ class ViewController: UIViewController ,ChartViewDelegate {
         
         setChart(data: arrChar)
         
-        // mortalityRate and recoveryRate calulation
+        // global mortalityRate and recoveryRate calculation
         let mortalityRate = totalDeaths! / totalConfirmed!
         let recoveryRate = totalRecovered! / totalConfirmed!
+        
+        // local mortalityRate and recoveryRate calculation
+        let localMortalityRate = localDeaths / localConfirm
+        let localRecoveryRate = localRecovered / localConfirm
         
         lblTotalCase.text = String(format:"%.0f", totalConfirmed!)
         lblTotalDeaths.text = String(format:"%.0f", totalDeaths!)
         lblTotalRecover.text = String(format:"%.0f", totalRecovered!)
         lblMortality.text = "\(String(format:"%.4f", mortalityRate))" + "%"
         lblRecoveryRate.text = "\(String(format:"%.4f", recoveryRate))" + "%"
-        txtInfo.text = "canada\nTotal Confirmed : \(localDeaths)\nTotal Deaths : \(localDeaths)\nTotal Recovered : \(localRecovered)"
+        txtInfo.text = "Canada\nTotal Confirmed : \(localConfirm)\nTotal Deaths : \(localDeaths)\nTotal Recovered : \(localRecovered)\nMortality Rate : \(String(format:"%.4f", localMortalityRate))" + "%\nRecovery Rate : \(String(format:"%.4f", localRecoveryRate))" + "%"
          
     }
     
@@ -157,7 +161,8 @@ class ViewController: UIViewController ,ChartViewDelegate {
     
     
     @IBAction func btnSelfAssesmentPress(_ sender: UIButton) {
-        
+        let selfAssesmentVC = storyboard?.instantiateViewController(identifier: "SelfAssesmentVC") as! SelfAssesmentVC
+        self.navigationController?.pushViewController(selfAssesmentVC, animated: true)
     }
     
     
