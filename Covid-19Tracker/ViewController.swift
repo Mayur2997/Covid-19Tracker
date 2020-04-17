@@ -34,6 +34,8 @@ class ViewController: UIViewController ,ChartViewDelegate {
     
     @IBOutlet var txtInfo: UITextView!
     
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }
@@ -47,7 +49,7 @@ class ViewController: UIViewController ,ChartViewDelegate {
     
     // Setup UI
     func setupUI() {
-                  
+        self.activityIndicator.isHidden = true
         roundedBorderView(view : totalView, color: .orange )
         roundedBorderView(view : recoveredView, color: .orange )
         roundedBorderView(view : dethsView, color: .orange )
@@ -166,12 +168,21 @@ class ViewController: UIViewController ,ChartViewDelegate {
     }
     
     
+    @IBAction func btnRefreshPress(_ sender: Any) {
+        fetchJson()
+    }
+    
+    
     //MARK:- API Call
     func fetchJson() {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         Alamofire.request("https://www.bing.com/covid/data").responseJSON { (response) in
             if let jsonResponse = response.result.value {
                 if let covidJson = jsonResponse as? [String: Any] {
                  print(covidJson)
+                    self.activityIndicator.isHidden = true
+                    self.activityIndicator.stopAnimating()
                     self.setData(data:covidJson)
                 }
             }

@@ -264,6 +264,22 @@
                                     <constraint firstItem="kbK-iw-veU" firstAttribute="centerY" secondItem="kgb-c2-zHO" secondAttribute="centerY" id="yTF-IX-Dsw"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-2Q-RYE">
+                                <rect key="frame" x="197" y="683" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="RFJ-45-aYX"/>
+                                    <constraint firstAttribute="width" constant="20" id="cSG-RS-hpF"/>
+                                </constraints>
+                                <color key="tintColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="btnRefreshPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ko9-pU-XpG"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-bd-VCm">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -278,6 +294,7 @@
                             <constraint firstItem="aWc-3D-4je" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Eer-4c-iB6"/>
                             <constraint firstItem="TAn-Nx-KGt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F6m-sX-Gu0"/>
                             <constraint firstItem="Xha-LP-xgn" firstAttribute="top" secondItem="ffC-fK-RTQ" secondAttribute="bottom" id="Fm8-T5-xxC"/>
+                            <constraint firstItem="RyT-2Q-RYE" firstAttribute="centerX" secondItem="NW6-44-IAm" secondAttribute="centerX" id="G2d-lJ-KK9"/>
                             <constraint firstItem="QzY-om-ABc" firstAttribute="top" secondItem="cyd-Js-VWY" secondAttribute="bottom" id="GRa-jn-Wk1"/>
                             <constraint firstItem="5bR-jx-PWk" firstAttribute="top" secondItem="oze-qH-Ceh" secondAttribute="top" id="Ji9-ba-r6a"/>
                             <constraint firstItem="6ju-Kd-lCx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.229469" id="KvP-5t-NQ3"/>
@@ -290,10 +307,12 @@
                             <constraint firstItem="kgb-c2-zHO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0691964" id="Qef-ym-jwt"/>
                             <constraint firstItem="QzY-om-ABc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qxk-Uv-zz8"/>
                             <constraint firstItem="wDr-M6-RDi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0334821" id="RAe-o9-nFk"/>
+                            <constraint firstItem="f7Q-bd-VCm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tiy-Xb-7Lh"/>
                             <constraint firstItem="aWc-3D-4je" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0223214" id="UJM-t9-I2X"/>
                             <constraint firstItem="Xha-LP-xgn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UfL-Os-4zB"/>
                             <constraint firstItem="p2K-2L-RGA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.253623" id="Y5B-P5-ohi"/>
                             <constraint firstItem="aWc-3D-4je" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yvn-B3-kil"/>
+                            <constraint firstItem="RyT-2Q-RYE" firstAttribute="centerY" secondItem="BUU-ps-Cze" secondAttribute="centerY" id="ZPe-ij-tzw"/>
                             <constraint firstItem="Pp6-q5-mfN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.229469" id="ZTb-ht-4Jw"/>
                             <constraint firstItem="ffC-fK-RTQ" firstAttribute="trailing" secondItem="aWc-3D-4je" secondAttribute="trailing" id="am2-xb-uIM"/>
                             <constraint firstItem="kgb-c2-zHO" firstAttribute="leading" secondItem="hFq-qg-2l7" secondAttribute="leading" id="bNo-dj-v88"/>
@@ -319,6 +338,7 @@
                             <constraint firstItem="hFq-qg-2l7" firstAttribute="leading" secondItem="6ju-Kd-lCx" secondAttribute="trailing" constant="30" id="tYK-T7-CKd"/>
                             <constraint firstItem="sLU-xF-CiX" firstAttribute="top" secondItem="QzY-om-ABc" secondAttribute="bottom" id="u5f-Jd-5x7"/>
                             <constraint firstItem="Cir-t1-slu" firstAttribute="top" secondItem="TAn-Nx-KGt" secondAttribute="bottom" id="uEV-Sg-z8J"/>
+                            <constraint firstItem="f7Q-bd-VCm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOg-Xk-GCS"/>
                             <constraint firstItem="cyd-Js-VWY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0223214" id="vwS-pk-1Vi"/>
                             <constraint firstItem="oze-qH-Ceh" firstAttribute="top" secondItem="aWc-3D-4je" secondAttribute="bottom" id="wFC-zd-kwR"/>
                             <constraint firstItem="TAn-Nx-KGt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0111607" id="xfU-iH-C0S"/>
@@ -331,6 +351,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="88d-PB-ShJ"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="f7Q-bd-VCm" id="WyK-IV-JFz"/>
                         <outlet property="avoidInfactionView" destination="p2K-2L-RGA" id="uuT-aD-PV3"/>
                         <outlet property="chartView" destination="Xha-LP-xgn" id="Lg6-55-eIB"/>
                         <outlet property="dethsView" destination="hFq-qg-2l7" id="quY-3R-8Qn"/>
@@ -931,6 +952,7 @@ Why? National and local authorities will have the most up to date information on
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
         <image name="covid-19" width="226" height="223"/>
         <image name="ic-arrow" width="18" height="14"/>
     </resources>
